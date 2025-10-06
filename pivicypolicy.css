@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Layout */
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Top Header */
+.top-header {
+  background: #3d3d3d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Navigation */
+.nav {
+  background: #b30000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.active {
+  background: #8b0000;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  color: rgb(72, 0, 255);
+  margin: 20px 0;
+}
+
+/* Main Section */
+.main-section {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.column {
+  background: white;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.column h2 {
+  background: #b30000;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  margin: -20px -20px 15px -20px;
+  border-radius: 6px 6px 0 0;
+}
+
+.column ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.column ul li {
+  margin-bottom: 8px;
+}
+
+.column ul li a {
+  text-decoration: none;
+  color: #0077b6;
+  font-size: 15px;
+}
+
+.column ul li a:hover {
+  text-decoration: underline;
+}
+
+.column p {
+  text-align: justify;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #191818;
+  color: white;
+  padding: 15px;
+  margin-top: auto;
+}
+
+footer .footer-links {
+  margin-top: 8px;
+}
+
+footer .footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 6px;
+  font-size: 0.9rem;
+}
+
+footer .footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav a {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .column h2 {
+    font-size: 16px;
+  }
+
+  .column ul li a {
+    font-size: 14px;
+  }
+}
